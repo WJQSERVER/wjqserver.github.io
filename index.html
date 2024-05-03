@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-05-03 23:12:38'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/Caddy2%E9%83%A8%E7%BD%B2%E9%80%9F%E7%8E%87%E9%99%90%E5%88%B6%E8%A7%84%E5%88%99/" title="Caddy2部署速率限制规则">Caddy2部署速率限制规则</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:34.280Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a></span></div><div class="content">开启速率限制以规避部分CC攻击
+
+
+安装Caddy2的速率限制需要靠插件实现,可以自行编译,也可以使用AddPackage快捷安装所需插件
+1./caddy add-package github.com/RussellLuo/caddy-ext/ratelimit
+
+配置当前配置文件设置为:单个IP在一分钟内请求超过100次,即返回429错误
+12345678example.com &#123;    route /* &#123;        rate_limit &#123;remote.ip&#125; 100r/m 10000 429    &#125;    reverse_proxy &#123;	to 0.0.0.0:8080	        &#125;        &#125;</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/%E9%83%A8%E7%BD%B2Memos,%E9%9A%8F%E6%89%8B%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/" title="部署Memos,随手记录笔记">部署Memos,随手记录笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:34.280Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Docker/">Docker</a></span></div><div class="content">简洁的碎片化知识整理工具
+
+
+
+1.Memos介绍1.功能
+可以记录每周事项
+
+可以记录一些即时的想法
+
+看完文章可以随手记录摘要
+
+可以临时充当设备之间的剪切板
+
+可以作为一个轻量化的卡片笔记使用
+
+
+2.特点
+开源,支持私有化部署,数据掌握在自己手中
+
+支持中文
+
+UI简洁,清爽
+
+交互逻辑清晰明了
+
+docker容器化部署
+
+
+2.Demo官方github:https://github.com/usememos/memos (github 20.7k star)
+官方demo:https://demo.usememos.com/
+3.开始部署安装docker详见www.wjqserver.xyz/2023/docker-install
+安装memos1docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos ghcr.io/usememos/memos:latest
+
+4.开始使用直接访问5230端口即可进入界面
+进入后记得禁止注册，除非你想公开这个界面
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/%E9%83%A8%E7%BD%B2Speedtest-X,%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%B5%8B%E9%80%9F%E7%BD%91%E9%A1%B5/" title="部署Speedtest-X,一个简单的测速网页">部署Speedtest-X,一个简单的测速网页</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:34.280Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Docker/">Docker</a></span></div><div class="content">Speedtest-X,一个更加完善的LibreSpeed Speedtest
+
+
+1.特点
+不依赖Mysql,使用轻量级数据库
+
+支持常规网页部署,同时支持Docker快速部署
+
+记录历史测速记录
+
+使用ip.sb作为GeoIP库,IP归属地信息更为精准
+
+
+2.部署Docker快速部署在此处,作者选择了使用Host模式部署,尽可能减少Docker的网络损耗
+1docker run -d -e MAX_LOG_COUNT=200 -e SAME_IP_MULTI_LOGS=true -e IP_SERVICE=ipinfo.io -e WEBPORT=9001 --network host -it badapple9/speedtest-x
+
+参数解释
+-d：以常驻进程模式启动
+
+-e WEBPORT&#x3D;9001: 容器内使用的端口
+
+-e MAX_LOG_COUNT&#x3D;200: 最大可保存多少条测速记录
+
+-e IP_SERVICE&#x3D;ip.sb: 使用的 IP 运营商解析服务(ip.sb 或 ipinfo.io)
+
+-e SAME_IP_MULTI_LOG ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/Caddy2%E6%97%A5%E5%BF%97%E6%A0%87%E5%87%86%E5%8C%96,%E5%A4%84%E7%90%86%E6%97%A5%E5%BF%97%E6%9B%B4%E4%B8%BA%E6%96%B9%E4%BE%BF/" title="Caddy2日志标准化,处理日志更为方便">Caddy2日志标准化,处理日志更为方便</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:34.112Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a></span></div><div class="content">对Caddy2原生的富文本json日志文件，改为common_log通用格式,让Caddy2和Nginx无缝切换
+
+
+引入首先,我们先来看一下默认情况下可用的日志配置
+12345678910example.com &#123;    reverse_proxy * 127.0.0.1:8080	log &#123;	    output file /root/data/caddy/log/example.com/access.log &#123;	        roll_size 25MB	        roll_keep 10	        roll_keep_for 24h	    &#125;	&#125;&#125;
+
+在这个配置内,设置了站点日志输出目录，文件滚动大小和最长保留时间
+入门这个配置可以简单的把原生的富文本(不易阅读),转换为更为常用且易于阅读的common_log格式
+12345678910111213example.com &#123;    reverse_proxy * 127.0.0.1:8080    log &#123;        form ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/Caddy2%E6%B7%BB%E5%8A%A0%E7%9C%9F%E5%AE%9EIP%E6%A0%87%E5%A4%B4/" title="Caddy2添加真实IP标头">Caddy2添加真实IP标头</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:34.100Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a></span></div><div class="content">在Caddy2中为站点添加真实IP标头,以便捷获取客户端IP。添加自定义标头,以满足不同业务的需求。
+
+
+真实IP此配置可以在使用了Cloudflare CDN的情况下获取访客真实IP
+123456789example.com &#123;    reverse_proxy &#123;	    to 0.0.0.0:8080	    header_up X-Real-IP &#123;remote_host&#125;	    	    header_up X-Real-IP &#123;http.request.header.CF-Connecting-IP&#125;	    header_up X-Forwarded-For &#123;http.request.header.CF-Connecting-IP&#125;	    header_up X-Forwarded-Proto &#123;http.request.header.CF-Visitor&#125;    &#125;        &#125;
+
+HSTS此配置会通告浏览器在接下来的1年内使用HTTPS访问 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/Cloudie%E9%BB%91%E4%BA%94VPS%E6%B5%8B%E8%AF%84/" title="Cloudie黑五VPS测评">Cloudie黑五VPS测评</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:34.028Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/VPS/">VPS</a></span></div><div class="content">Cloudie - Black Friday Special 年付380HKD
+
+
+
+商家介绍Cloudie成立于2004年，前身为Pangnet,(2015年更换为Cloudie)是香港最早提供IDC互联网服务的技术公司，我们提供专用服务器租用，服务器托管，机柜租用，专线租赁等中间件服务。
+服务器配置1234567CPU: 4 Cores(E5-2683v3)内存: 4GB硬盘: 50GB(HDD)IPv4 x1IPv6 None带宽: 100Mbps流量: 3TB/月
+
+简评CLD在香港直连中算廉价线路,带宽和延迟中等偏上,稳定性不佳,线路容易遭受攻击黑五特价款性价比不错,这个配置可以满足大部分需求
+融合怪测试123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/%E9%83%A8%E7%BD%B2Portainer,%E4%BB%A5%E4%BE%BF%E6%8D%B7%E7%AE%A1%E7%90%86Docker%E5%AE%B9%E5%99%A8/" title="部署Portainer,以便捷管理Docker容器">部署Portainer,以便捷管理Docker容器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:33.960Z" title="Created 2024-05-03 22:00:33">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Docker/">Docker</a></span></div><div class="content">Portainer是一个使用Docker部署的Docker容器可视化管理面板
+
+
+1.Docker部署请转至另一篇文章www.wjqserver.xyz/2023/docker-install
+2.Portainer部署容器部署12docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /dockerData/portainer:/data --restart=always --name portainer 6053537/portainer-ce:latest#9000端口可自行修改为可用端口
+
+开始使用打开宿主机ip:9000(或你修改过的端口)即可进入管理界面
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2Cloudflare%20WAF%E4%BF%9D%E6%8A%A4%E7%BD%91%E7%AB%99/" title="快速部署Cloudflare WAF保护网站">快速部署Cloudflare WAF保护网站</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:33.948Z" title="Created 2024-05-03 22:00:33">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a></span></div><div class="content">使用Cloudflare WAF规则和速率限制,以保护网站和 API 免受恶意传入流量和爬虫的影响
+WAF规则1.放行选择跳过,并勾选所有其余自定义规则
+1(cf.client.bot) or (http.user_agent contains &quot;duckduckgo&quot;) or (http.user_agent contains &quot;facebookexternalhit&quot;) or (http.user_agent contains &quot;Feedfetcher-Google&quot;) or (http.user_agent contains &quot;LinkedInBot&quot;) or (http.user_agent contains &quot;Mediapartners-Google&quot;) or (http.user_agent contains &quot;msnbot&quot;) or (http.user_agent contains &quot;Slackbot&quot;) or (http.user ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/%E4%B8%BACaddy2%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98,%E5%8A%A0%E5%BF%AB%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6/" title="为Caddy2配置缓存,加快网站访问速度">为Caddy2配置缓存,加快网站访问速度</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:33.884Z" title="Created 2024-05-03 22:00:33">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a></span></div><div class="content">为caddy2开启缓存,优化网站性能,给访问者带来更加优质的体验,并减少对服务器计算资源的占用
+1.前言Caddy2原生并不包含缓存组件,需要自行添加,相较于Nginx会略为繁琐一些
+2.部署Caddy2引入了更加便捷的插件安装方式，间接弥补了功能需要插件实现的痛点
+1.进入Caddy所在目录1cd /root/data/caddy
+
+2.添加插件caddy会自行编译插件,将插件自动加入主程序内
+1./caddy add-package github.com/caddyserver/cache-handler
+
+3.配置修改Caddyfile以启用缓存
+1.全局配置1234&#123;    order cache before rewrite    cache&#125;
+
+2.网站配置12345678example.com &#123;    reverse_proxy * 127.0.0.1:80 #反代演示，自行修改    cache &#123;        allowed_http_verbs GET #缓存请求类型        stale 100s #缓存过期时间   ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/03/%E9%83%A8%E7%BD%B2Fail2ban%E4%BB%A5%E9%98%B2%E6%AD%A2SSH%E7%88%86%E7%A0%B4/" title="部署Fail2ban以防止SSH爆破">部署Fail2ban以防止SSH爆破</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-03T14:00:33.788Z" title="Created 2024-05-03 22:00:33">2024-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/VPS/">VPS</a></span></div><div class="content">在VPS上安装Fail2ban防止SSH密码被别有用心的恶人爆破
+
+
+:::note{title&#x3D;”注”}本文使用Debian12环境进行演示
+涉及文件均在GitHub开源,可自行检查安全性:::
+1.介绍Fail2ban是一个使用python编写的开源软件,用于保护服务器免受暴力破解
+2.安装123apt updateapt install fail2ban -ysystemctl enable fail2ban
+
+3.配置备份原有全局配置
+1cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+清理系统自带配置（各个系统不一样,为了防止冲突,推荐清除）
+1rm -rf /etc/fail2ban/jail.d/*
+
+创建SSH防爆破规则
+1.直接拉取配置仅为便捷配置方式,与方法2等效
+1wget -O /etc/fail2ban/jail.d/sshd.local https://raw.githubusercontent.com/WJQSERVER/tools-stable/main/systools/firewall ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/03/Caddy2%E9%83%A8%E7%BD%B2%E9%80%9F%E7%8E%87%E9%99%90%E5%88%B6%E8%A7%84%E5%88%99/" title="Caddy2部署速率限制规则">Caddy2部署速率限制规则</a><time datetime="2024-05-03T14:00:34.280Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/03/%E9%83%A8%E7%BD%B2Memos,%E9%9A%8F%E6%89%8B%E8%AE%B0%E5%BD%95%E7%AC%94%E8%AE%B0/" title="部署Memos,随手记录笔记">部署Memos,随手记录笔记</a><time datetime="2024-05-03T14:00:34.280Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/03/%E9%83%A8%E7%BD%B2Speedtest-X,%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%B5%8B%E9%80%9F%E7%BD%91%E9%A1%B5/" title="部署Speedtest-X,一个简单的测速网页">部署Speedtest-X,一个简单的测速网页</a><time datetime="2024-05-03T14:00:34.280Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/03/Caddy2%E6%97%A5%E5%BF%97%E6%A0%87%E5%87%86%E5%8C%96,%E5%A4%84%E7%90%86%E6%97%A5%E5%BF%97%E6%9B%B4%E4%B8%BA%E6%96%B9%E4%BE%BF/" title="Caddy2日志标准化,处理日志更为方便">Caddy2日志标准化,处理日志更为方便</a><time datetime="2024-05-03T14:00:34.112Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/03/Caddy2%E6%B7%BB%E5%8A%A0%E7%9C%9F%E5%AE%9EIP%E6%A0%87%E5%A4%B4/" title="Caddy2添加真实IP标头">Caddy2添加真实IP标头</a><time datetime="2024-05-03T14:00:34.100Z" title="Created 2024-05-03 22:00:34">2024-05-03</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Docker/"><span class="card-category-list-name">Docker</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/VPS/"><span class="card-category-list-name">VPS</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BB%BA%E7%AB%99/"><span class="card-category-list-name">建站</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%BB%98%E8%AE%A4/"><span class="card-category-list-name">默认</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/05/"><span class="card-archive-list-date">May 2024</span><span class="card-archive-list-count">15</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">15</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-05-03T15:12:38.830Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
